@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# MaruBatu-Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+일본어로 마루 = 동그라미(○), 바츠 = 가위표(×) 입니다.
 
-## Available Scripts
+해서 OX-game인데, 일본인들은 OX는 영어 OX로 보이지 동그라미와 가위표로 취급하지는 않는다더군요..
 
-In the project directory, you can run:
+해서 마루바츠 게임입니다.
 
-### `npm start`
+## 코드 설명
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+사실 이 코드는 완성본은 아닙니다만, 클라이언트 측에서는 완성본입니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+서버를 연결할 것을 전제로 화면을 분할해서 개발한 후 (컴포넌트를 따로 만들었다는 뜻)
 
-### `npm test`
+클라이언트 측에서 에러 발생 여부를 체크하기 위해 한 화면에 디자인 했기 때문에 사실상 게임을 하기엔 어렵다고 볼 수 있습니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 게임 흐름 설명
 
-### `npm run build`
+1. 우선 게임 시작을 누르면 두 플레이어는 즉석에서 3가지 문제를 만들 수 있습니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. 그 후 두 플레이어가 모두 레디를 누른다면 즉시 게임 화면으로 넘어가 각자 상대가 푼 문제를 풀어야하는 구조로 이루어져 있습니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. 이 때 상대가 얼토당토하지 않은 문제를 만들어뒀으면 신고가 가능하다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ps. 게임 결과를 인정할 수 없을 때 이의신청 기능을 만들 예정이며, 이의 신청 기능은 역전재판과 같은 느낌으로 만들지, 단순히 채팅으로 만들지 고민 중에 있습니다.
